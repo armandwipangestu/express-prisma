@@ -1,3 +1,6 @@
+<h1 align="center">Express Prisma</h1>
+<p align="center">Simple CRUD API with Express JS, Prisma ORM and PostgreSQL Database</p>
+
 ## Running on Localhost
 
 -   Clone this repository
@@ -19,7 +22,7 @@ cp .env.development .env
 ```
 
 > **NOTE**:
-> Fill `database_url` with your database postgres, for example
+> Fill `DATABASE_URL` with your database postgres, for example
 >
 > ```
 > DATABASE_URL=postgresql://USER:PASSWORD@HOSTNAME:PORT/DBNAME
