@@ -28,6 +28,18 @@ cp .env.development .env
 > DATABASE_URL=postgresql://USER:PASSWORD@HOSTNAME:PORT/DBNAME
 > ```
 
+## Running Prisma Studio
+
+-   Run this command to run Prisma Studio
+
+```shell
+pnpm dlx prisma studio
+```
+
+Open your web browser with url `localhost:5555`, it will show like this
+
+![image](https://github.com/armandwipangestu/express-prisma/assets/64394320/00d70e37-8b5b-456a-8a4d-c65062cc3abe)
+
 ## Structure Folder
 
 ```
