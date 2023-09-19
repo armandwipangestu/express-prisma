@@ -40,6 +40,12 @@ Open your web browser with url `localhost:5555`, it will show like this
 
 ![image](https://github.com/armandwipangestu/express-prisma/assets/64394320/00d70e37-8b5b-456a-8a4d-c65062cc3abe)
 
+> **NOTE**: If you add or edit file `schema.prisma` then you need to run this (to regenerate the schema)
+>
+> ```shell
+> pnpm dlx prisma generate && pnpm dlx prisma db push
+> ```
+
 ## Structure Folder
 
 ```
