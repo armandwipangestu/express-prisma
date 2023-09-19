@@ -65,3 +65,14 @@ Open your web browser with url `localhost:5555`, it will show like this
         ├──  product.repository.js
         └──  product.service.js
 ```
+
+## Endpoint
+
+| Endpoint        | Method |
+| --------------- | ------ |
+| `/products`     | GET    |
+| `/products/:id` | GET    |
+| `/products`     | POST   |
+| `/products/:id` | DELETE |
+| `/products/:id` | PUT    |
+| `/products/:id` | PATCH  |
