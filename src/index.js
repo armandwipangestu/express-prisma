@@ -21,6 +21,29 @@ app.get("/products", async (req, res) => {
   });
 });
 
+app.get("/products/:id", async (req, res) => {
+  const id = req.params.id;
+  const product = await prisma.product.findUnique({
+    where: {
+      id,
+    },
+  });
+
+  if (!product) {
+    res.status(400).send({
+      data: product,
+      status_code: "400 Bad Request",
+      message: "Product not found",
+    });
+  }
+
+  res.status(200).send({
+    data: product,
+    status_code: "200 OK",
+    message: "Get Product By Id",
+  });
+});
+
 app.post("/products", async (req, res) => {
   //   const newProduct = req.body;
   const { name, price, description, image } = req.body;
